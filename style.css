@@ -1,0 +1,137 @@
+/*font-family: "Figtree", sans-serif;*/
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+* {
+  font-family: "Figtree";
+}
+body {
+  background-color: var(--yellow);
+  margin: 0;
+  padding: 0;
+}
+.learning-card {
+  width: 80%;
+  border-radius: 1.35rem;
+  margin-inline: 3rem;
+  margin-block: 5rem;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  box-shadow: 1rem 1rem;
+}
+.logo {
+  width: 85%;
+  height: 40%;
+  margin-block: 1rem;
+  margin-inline: 1.5rem;
+  border-radius: 1rem;
+}
+p.bold-yellow {
+  background-color: var(--yellow);
+  margin-left: 1.5rem;
+  width: fit-content;
+  padding-inline: 0.8rem;
+  padding-block: 0.25rem;
+  border-radius: 0.3rem;
+}
+p,
+h1,
+img {
+  margin-inline: 1.5rem;
+}
+h1 {
+  font-size: 1.3rem;
+}
+p.grey {
+  color: var(--grey);
+  font-size: 0.8rem;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-block: 2rem;
+}
+footer > img {
+  height: 3rem;
+  margin-right: 0;
+}
+footer > p {
+  margin-left: 1rem;
+}
+h1:hover {
+  color: var(--yellow);
+}
+
+@media (max-width: 375px) {
+  .learning-card {
+    margin-inline: 10%;
+  }
+  .logo {
+    margin-inline: 7%;
+  }
+  p,
+  img,
+  h1 {
+    margin-inline: 7%;
+  }
+  p.bold-yellow {
+    margin-left: 1.3rem;
+  }
+  h1 {
+    font-size: 0.9rem;
+  }
+  p.grey {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-wdith: 425px) {
+  p.grey {
+    font-size: 1.6rem;
+  }
+  .learning-card {
+    margin-inline: 10%;
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .learning-card {
+    width: 50%;
+    margin-inline: 25%;
+  }
+  h1:hover {
+    color: var(--yellow);
+  }
+  p.grey {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .learning-card {
+    margin-block: 25%;
+  }
+  p,
+  img,
+  h1 {
+    margin-inline: 2rem;
+  }
+  h1:hover {
+    color: var(--yellow);
+  }
+  p.grey {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1440px) {
+  .learning-card {
+    width: 30%;
+    margin-inline: 31%;
+  }
+  p.grey {
+    font-size: 1.8rem;
+  }
+}
